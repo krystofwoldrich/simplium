@@ -1,3 +1,5 @@
+import process from 'node:process';
+
 import appium from 'appium';
 import { remote } from 'webdriverio';
 
@@ -75,3 +77,4 @@ if (appiumServer) {
   await appiumServer.close();
 }
 console.log('✅ Appium server stopped.');
+process.exit(0);
